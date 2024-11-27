@@ -8,7 +8,7 @@ def clean_categories(text:str):
     text_splitted = text.split(";")
     for category in text_splitted:
         category_values = category.split("-")
-        if category_values[1] == "1" and category_values[0]!="related":
+        if category_values[1] == "1":
             result.append(category_values[0])
             
     return result
